@@ -118,9 +118,9 @@ export function CustomDrawerContent(props: any) {
 
 // Drawer navigator setup
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import HomeScreen from "./home";
+import HomeScreen from "./(home)/home";
 import DriverRegister from "./driverRegistration";
-import NotificationsScreen from "./explore";
+import NotificationsScreen from "./(home)/explore";
 
 const Drawer = createDrawerNavigator();
 export default function App() {
@@ -132,7 +132,7 @@ export default function App() {
         drawerContent={(props) => <CustomDrawerContent {...props} />}
         screenOptions={{ headerShown: false }}
       >
-        <Drawer.Screen name="Home" component={HomeScreen} />
+        <Drawer.Screen name="home)" component={HomeScreen} />
         <Drawer.Screen name="Notifications" component={NotificationsScreen} />
         {!user?.isDriver && (
           <Drawer.Screen

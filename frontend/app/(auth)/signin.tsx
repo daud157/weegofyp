@@ -67,7 +67,7 @@ const Signin: React.FC = () => {
       setLoading(true);
 
       try {
-        const res = await axios.post("http://192.168.218.12:3000/auth/login", {
+        const res = await axios.post("http://192.168.100.7:3000/auth/login", {
           email,
           password,
         });

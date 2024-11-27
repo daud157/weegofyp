@@ -20,7 +20,7 @@ const BookingsScreen = () => {
       return (
         <View style={styles.emptyContainer}>
           <Image
-            source={require("../../assets/images/Logo.png")}
+            source={require("../../../assets/images/Logo.png")}
             style={styles.emptyImage}
           />
           <Text style={[styles.emptyTitle, { color: theme.colors.text }]}>
@@ -46,7 +46,7 @@ const BookingsScreen = () => {
       >
         <View style={styles.titleContainer}>
           <Image
-            source={require("../../assets/images/Logo.png")}
+            source={require("../../../assets/images/Logo.png")}
             style={styles.titleImage}
           />
           <Text style={[styles.title, { color: theme.colors.text }]}>My Bookings</Text>
